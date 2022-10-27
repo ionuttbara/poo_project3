@@ -1,1 +1,1 @@
-# Proiect 3 
+# Proiect 3 - Aplicatie de gestiune a unei francize

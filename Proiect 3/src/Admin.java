@@ -1,4 +1,8 @@
+import java.io.FileWriter;
+import java.io.IOException;
+
 public class Admin {
+    private FileWriter myWriter;
     private static Admin instance;
 
     private String nume;
@@ -8,6 +12,12 @@ public class Admin {
     }
     private Admin(String nume){
         this.nume=nume;
+        try {
+            FileWriter myWriter = new FileWriter("Log_Admin");
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public static Admin getInstance(){
@@ -15,6 +25,18 @@ public class Admin {
             instance=new Admin();
         }
         return instance;
+    }
+    public void WriteToFile(){
+
+        try {
+
+            myWriter.write("Admin instantiat cu succes");
+            myWriter.close();
+
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 

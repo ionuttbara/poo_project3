@@ -1,5 +1,5 @@
 
-public class Produs {
+public class Produs implements IQuantity {
     private String Nume;
     private int Pret;
     private int Cantitate;

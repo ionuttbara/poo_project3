@@ -6,7 +6,7 @@ Odata ce este selectat un magazin din franciza, vor fi afisare produsele, inform
 
 # Implementare
 
-Diagrama UML a proiectului:
+Diagrama UML a proiectului:  
 ![Diagrama UML a aplicatiei](https://user-images.githubusercontent.com/76656855/199264907-738436c6-9adb-4d8b-867e-ad6ad95f16d5.png)
 
 

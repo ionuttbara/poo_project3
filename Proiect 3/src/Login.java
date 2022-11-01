@@ -47,8 +47,6 @@ public class Login {
     private void initialize() {
         frmLoginSystem = new JFrame();
         frmLoginSystem.setTitle("Logare in Proiect ");
-        frmLoginSystem.getContentPane().setBackground(SystemColor.activeCaptionBorder);
-        frmLoginSystem.setBackground(SystemColor.activeCaptionBorder);
         frmLoginSystem.setBounds(200, 200, 332, 378);
         frmLoginSystem.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frmLoginSystem.getContentPane().setLayout(null);

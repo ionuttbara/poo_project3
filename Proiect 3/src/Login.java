@@ -78,26 +78,24 @@ public class Login {
         btnLogin.setFont(new Font("Tahoma", Font.PLAIN, 12));
         btnLogin.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                String password = txtPW.getText();
-                String username = txtUN.getText();
+                String parola = txtPW.getText();
+                String utilizator = txtUN.getText();
                 // parola admin si username admin
-                if (password.contains("admin") && username.contains("admin")) {
-                    // de aici conditia de pus
-                    txtPW.setText(null);
-                    txtUN.setText(null);
-                    i++;
+                if (JOptionPane.showConfirmDialog(btnLogin,"Esti sigur ca e corect user-ul?","Fereastra de login",JOptionPane.YES_NO_OPTION)==JOptionPane.YES_NO_OPTION) {
+                    if (parola.contains("1234") && utilizator.contains("admin")) {
+                        // de aici conditia de pus
+                        txtPW.setText(null);
+                        txtUN.setText(null);
+                        i++;
 
-                    // log
-                    System.out.println  ("Logat de  "+i+" ori");
+                        // log
+                        System.out.println("Logat de  " + i + " ori");
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Date incorecte", "Eroare de logare", JOptionPane.ERROR_MESSAGE);
+                        txtPW.setText(null);
+                        txtUN.setText(null);
+                    }
                 }
-
-                else
-                {
-                    JOptionPane.showMessageDialog(null, "Date incorecte","Eroare de logare", JOptionPane.ERROR_MESSAGE);
-                    txtPW.setText(null);
-                    txtUN.setText(null);
-                }
-
 
             }
         });
@@ -109,9 +107,11 @@ public class Login {
         btnReset.setFont(new Font("Tahoma", Font.PLAIN, 12));
         btnReset.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+
+                if (JOptionPane.showConfirmDialog(btnReset,"Vrei sa stergil?","Fereastra de login",JOptionPane.YES_NO_OPTION)==JOptionPane.YES_NO_OPTION) {
                 txtUN.setText(null);
                 txtPW.setText(null);
-            }
+            }}
         });
         btnReset.setBounds(124, 261, 70, 23);
         frmLoginSystem.getContentPane().add(btnReset);

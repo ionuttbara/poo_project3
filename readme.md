@@ -1,4 +1,4 @@
-# Ce consta in acest proiect?
+# In ce consta acest proiect?
 
 In acest proiect consta in gestiunea a unei francize de magazine de catre un adminitrator. In aplicatie vei vedea orasul, adresa si informatii referitoare la un magazin din franciza.
 Odata ce este selectat un magazin din franciza, vor fi afisare produsele, informatii, pret si stoc.

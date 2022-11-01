@@ -21,8 +21,11 @@ Screenshot login:
 # Intrebari referitoare la program
 
 1. __Care este parola si username-ul pentru access in aplicatie?__  
-  Username-ul si parola sunt:
+  Username-ul:
   ```  
   admin  
   ```  
-
+  Parola:
+  ```  
+  1234  
+  ```  

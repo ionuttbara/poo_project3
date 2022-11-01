@@ -86,6 +86,8 @@ public class Login {
                         // de aici conditia de pus
                         txtPW.setText(null);
                         txtUN.setText(null);
+                        frmLoginSystem.dispose();
+                        new Fereastra2();
                         i++;
 
                         // log
